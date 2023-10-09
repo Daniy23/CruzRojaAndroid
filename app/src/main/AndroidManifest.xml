@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Administrador"
+        tools:targetApi="31">
+        <activity
+            android:name=".contrasena"
+            android:exported="false" />
+        <activity
+            android:name=".correoelectronico"
+            android:exported="false" />
+        <activity
+            android:name=".fotoperfil"
+            android:exported="false" />
+        <activity
+            android:name=".nombreusuario"
+            android:exported="false" />
+        <activity
+            android:name=".ajustes"
+            android:exported="false" />
+        <activity
+            android:name=".nuevoanuncio"
+            android:exported="false" />
+        <activity
+            android:name=".anuncios"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".menuprincipal"
+            android:exported="false" />
+        <activity
+            android:name=".restablecercontrasena"
+            android:exported="false" />
+        <activity
+            android:name=".recuperacioncontrasena"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
