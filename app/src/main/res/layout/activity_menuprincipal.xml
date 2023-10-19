@@ -15,12 +15,8 @@
         android:textColor="#EE140A"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="61dp" />
 
     <Button
         android:id="@+id/dash"
@@ -47,12 +43,17 @@
         android:text="Button"
         app:circularflow_angles="0"
         app:circularflow_radiusInDP="0"
+<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.218" />
+=======
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="337dp" />
+>>>>>>> cb07d7c16250f74e1109b1570b269e12ddd043a3
 
     <TextView
         android:id="@+id/textView3"
@@ -65,11 +66,12 @@
         android:textColor="#B5EE140A"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.062" />
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="216dp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/Daniy23/CruzRojaAndroid.git" />
 </androidx.constraintlayout.widget.ConstraintLayout>
