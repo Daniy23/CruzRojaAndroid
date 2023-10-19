@@ -49,12 +49,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="https://github.com/Daniy23/CruzRojaAndroid.git" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="186dp"
-        tools:layout_editor_absoluteY="498dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
