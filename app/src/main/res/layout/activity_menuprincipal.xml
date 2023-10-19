@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".menuprincipal">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:fontFamily="sans-serif"
+        android:text="Bienvenido             Admin"
+        android:textColor="#EE140A"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:bufferType="normal"
+        android:text="Button"
+        app:circularflow_angles="0"
+        app:circularflow_radiusInDP="0"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="232dp"
+        android:layout_height="47dp"
+        android:background="#EE140A"
+        android:backgroundTint="#00F6F2F2"
+        android:text="¿Qué quieres hacer?"
+        android:textAlignment="center"
+        android:textColor="#B5EE140A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/Daniy23/CruzRojaAndroid.git" />
 </androidx.constraintlayout.widget.ConstraintLayout>
