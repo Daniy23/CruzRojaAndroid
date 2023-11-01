@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
+        android:onClick="loginView"
         android:text="@string/iniciar_sesi_n2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,6 +60,7 @@
         android:id="@+id/signUp_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="signUpAction"
         android:text="@string/crear_cuenta2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,20 +70,21 @@
         app:layout_constraintVertical_bias="0.762" />
 
     <EditText
-        android:id="@+id/passwordText"
+        android:id="@+id/passwordEditText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="340dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textEmailAddress"
+        android:hint="@string/tu_contrase_a5"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
         app:layout_constraintVertical_bias="0.446"
-        tools:ignore="LabelFor,TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        android:autofillHints="" />
+        tools:ignore="LabelFor,TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView11"
@@ -93,22 +96,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText2"
         app:layout_constraintVertical_bias="0.528" />
 
     <EditText
-        android:id="@+id/emailText"
+        android:id="@+id/emailEditText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="464dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPassword"
+        android:hint="@string/tu_email4"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.4"
-        tools:ignore="LabelFor,TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        android:autofillHints="" />
+        tools:ignore="LabelFor,TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
