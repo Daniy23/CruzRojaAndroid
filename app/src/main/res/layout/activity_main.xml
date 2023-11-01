@@ -78,26 +78,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.156" />
-
-    <Button
-        android:id="@+id/crearcuenta"
-        android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="92dp"
-        android:backgroundTint="#FFFFFF"
-        android:onClick="signupgo"
-        android:text="Crear Cuenta"
-        android:textColor="#EE140A"
-        android:textIsSelectable="false"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
