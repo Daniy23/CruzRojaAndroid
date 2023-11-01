@@ -61,5 +61,83 @@
         app:layout_constraintVertical_bias="0.893"
         tools:ignore="TextContrastCheck" />
 
+    <Button
+        android:id="@+id/recuperarBtn"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#EE140A"
+        android:onClick="logOutAction"
+        android:text="@string/recuperar"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.542"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/guardarBtn"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#EE140A"
+        android:onClick="logOutAction"
+        android:text="@string/guardar"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.401"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/eliminarBtn"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#EE140A"
+        android:onClick="logOutAction"
+        android:text="@string/eliminar"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.691"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/direccionTextView"
+        android:layout_width="247dp"
+        android:layout_height="61dp"
+        android:hint="@string/calle_n_mero_piso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.055"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/telefonoTextView"
+        android:layout_width="241dp"
+        android:layout_height="57dp"
+        android:hint="@string/tel_fono"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccionTextView"
+        app:layout_constraintVertical_bias="0.043" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

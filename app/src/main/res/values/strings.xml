@@ -28,4 +28,9 @@
     <string name="cerrar_sesi_n">Cerrar Sesión</string>
     <string name="bienvenido_admin">Bienvenido Admin</string>
     <string name="qu_quieres_hacer">¿Qué quieres hacer?</string>
+    <string name="calle_n_mero_piso">calle, número, piso</string>
+    <string name="eliminar">eliminar</string>
+    <string name="guardar">guardar</string>
+    <string name="recuperar">recuperar</string>
+    <string name="tel_fono">Teléfono</string>
 </resources>
