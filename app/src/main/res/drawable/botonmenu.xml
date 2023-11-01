@@ -1,3 +1,15 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="2dp" />
-</shape>
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#EE140A" /> <!-- Color de fondo cuando se presiona el botón -->
+            <corners android:radius="0dp" /> <!-- Bordes cuadrados -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#EE140A" /> <!-- Color de fondo por defecto -->
+            <corners android:radius="0dp" /> <!-- Bordes cuadrados -->
+        </shape>
+    </item>
+</selector>
