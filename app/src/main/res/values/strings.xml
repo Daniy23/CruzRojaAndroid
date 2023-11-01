@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">administrador</string>
+    <string name="app_name">Admin Cruz Roja</string>
+    <string name="administrador">ADMINISTRADOR</string>
+    <string name="cruz_roja_mexicana">Cruz Roja Mexicana</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
 </resources>

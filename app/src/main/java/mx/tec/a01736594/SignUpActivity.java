@@ -3,8 +3,7 @@ package mx.tec.a01736594;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
-public class signup extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
