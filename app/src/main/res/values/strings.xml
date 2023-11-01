@@ -4,4 +4,16 @@
     <string name="cruz_roja_mexicana">Cruz Roja Mexicana</string>
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="iniciar_sesi_n2">Iniciar Sesión</string>
+    <string name="crear_cuenta2">Crear Cuenta</string>
+    <string name="ingresa_tus_datos_o_inicia_sesi_n">Ingresa tus datos o inicia sesión</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="crea_tu_cuenta">Crea tu cuenta</string>
+    <string name="iniciar_sesi_n3">Iniciar Sesión</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu contraseña?</string>
+    <string name="iniciar_sesi_n_admin">Iniciar Sesión Admin</string>
+    <string name="inicia_sesi_n_o_crea_tu_cuenta">Inicia Sesión o crea tu cuenta</string>
+    <string name="email2">Email</string>
+    <string name="password2">Password</string>
 </resources>
