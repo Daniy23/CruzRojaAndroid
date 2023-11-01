@@ -43,11 +43,12 @@
         app:layout_constraintVertical_bias="0.149" />
 
     <EditText
-        android:id="@+id/emailText2"
+        android:id="@+id/emailEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/tu_email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,14 +68,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailText2"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
         app:layout_constraintVertical_bias="0.052" />
 
     <EditText
-        android:id="@+id/passwordText2"
+        android:id="@+id/passwordEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/tu_contrase_a"
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,18 +86,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintVertical_bias="0.065"
-        tools:ignore="LabelFor,SpeakableTextPresentCheck"
-        android:autofillHints="" />
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="logInAction"
         android:text="@string/iniciar_sesi_n3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordText2" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
     <Button
         android:id="@+id/olvide_btn"
