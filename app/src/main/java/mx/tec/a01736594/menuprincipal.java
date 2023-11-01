@@ -30,7 +30,7 @@ public class menuprincipal extends AppCompatActivity {
         startActivity(intent);
     }
     public void login(View v){
-        Intent intent = new Intent(this, login.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
