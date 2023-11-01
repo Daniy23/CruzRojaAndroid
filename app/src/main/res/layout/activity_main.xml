@@ -67,6 +67,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="188dp"
         android:background="@drawable/rounded_button_background"
+        android:onClick="signUpAction"
         android:text="@string/crear_cuenta"
         android:textAllCaps="false"
         android:textColor="#DD2C00"
