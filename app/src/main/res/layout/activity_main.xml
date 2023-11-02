@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="0.156" />
 
     <Button
-        android:id="@+id/iniciosesion2"
+        android:id="@+id/crearcuenta"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginTop="92dp"

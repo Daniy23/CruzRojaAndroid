@@ -7,13 +7,14 @@
     tools:context=".login">
 
     <Button
-        android:id="@+id/cerrarsesion2"
+        android:id="@+id/iniciarsesion"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginBottom="140dp"
         android:backgroundTint="#EE140A"
         android:onClick="login"
-        android:text="Cerrar Sesión"
+        android:text="Iniciar Sesión"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
