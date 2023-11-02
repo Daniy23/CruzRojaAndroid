@@ -4,15 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuPrincipalActivity">
+    android:background="@drawable/fondo"
+    tools:context=".menuprincipal">
+
+
+    <Button
+        android:id="@+id/serviciosocial"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:foreground="@drawable/serviciosocialmp"
+        android:onClick="horasservicio"
+        android:text="Horas de servicio social"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.635" />
+
+    <Button
+        android:id="@+id/ajustes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:foreground="@drawable/ajustes"
+        android:onClick="ajustes"
+        android:text="Ajustes"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.635" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="280dp"
         android:layout_height="124dp"
         android:fontFamily="sans-serif"
-        android:text="@string/bienvenido_admin"
+        android:text="Bienvenido             Admin"
         android:textColor="#EE140A"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,8 +53,7 @@
         app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
-        tools:ignore="TextSizeCheck" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <TextView
         android:id="@+id/textView3"
@@ -29,7 +61,7 @@
         android:layout_height="47dp"
         android:background="#EE140A"
         android:backgroundTint="#00F6F2F2"
-        android:text="@string/qu_quieres_hacer"
+        android:text="¿Qué quieres hacer?"
         android:textAlignment="center"
         android:textColor="#B5EE140A"
         android:textSize="24sp"
@@ -40,26 +72,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.062"
-        tools:ignore="TextContrastCheck,TextSizeCheck" />
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/cerrarSesion"
-        android:layout_width="171dp"
-        android:layout_height="48dp"
-        android:background="@drawable/rounded_button_background"
+        android:id="@+id/dashboard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/botonmenu"
         android:backgroundTint="#EE140A"
-        android:onClick="logOutAction"
-        android:text="@string/cerrar_sesi_n"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
+        android:foreground="@drawable/dashboardmp"
+        android:onClick="dashboard"
+        android:text="dashboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.893"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintVertical_bias="0.115" />
+
+    <Button
+        android:id="@+id/anuncio"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/botonmenu"
+        android:backgroundTint="#EE140A"
+        android:foreground="@drawable/anunciomp"
+        android:onClick="anuncio"
+        android:text="Anuncios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <Button
+        android:id="@+id/cerrarsesion"
+        android:layout_width="231dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#EE140A"
+        android:onClick="login"
+        android:text="Cerrar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviciosocial"
+        app:layout_constraintVertical_bias="0.792" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

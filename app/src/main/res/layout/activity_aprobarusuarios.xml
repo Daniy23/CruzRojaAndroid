@@ -4,29 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".nuevoanuncio">
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="300dp"
-        android:layout_height="124dp"
-        android:fontFamily="sans-serif"
-        android:text="Crear Nuevo Anuncio"
-        android:textColor="#EE140A"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108" />
+    tools:context=".aprobarusuarios">
 
     <Button
-        android:id="@+id/returnmenu5"
+        android:id="@+id/returnmenu"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/returngray"
@@ -38,4 +19,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="300dp"
+        android:layout_height="124dp"
+        android:fontFamily="sans-serif"
+        android:text="Bienvenido a aprobar usuarios"
+        android:textColor="#EE140A"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
 </androidx.constraintlayout.widget.ConstraintLayout>

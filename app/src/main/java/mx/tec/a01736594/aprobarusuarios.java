@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class dashboard extends AppCompatActivity {
+public class aprobarusuarios extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_aprobarusuarios);
     }
     public void go(View v){
         Intent intent = new Intent(this, menuprincipal.class);
