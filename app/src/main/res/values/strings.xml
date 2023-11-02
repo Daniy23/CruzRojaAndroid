@@ -33,4 +33,6 @@
     <string name="guardar">guardar</string>
     <string name="recuperar">recuperar</string>
     <string name="tel_fono">Teléfono</string>
+    <string name="ver_usuarios">Ver Usuarios</string>
+    <string name="usuarios_pendientes_de_aprobaci_n">Usuarios Pendientes de Aprobación</string>
 </resources>

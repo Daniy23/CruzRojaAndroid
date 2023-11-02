@@ -1,8 +1,8 @@
 package mx.tec.a01736594
 
 import android.content.Intent
-import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
@@ -23,11 +23,27 @@ class MenuPrincipalActivity : AppCompatActivity() {
         val email = bundle?.getString("email")
         val direccion = (findViewById<View>(R.id.direccionTextView) as EditText).text.toString()
         val phone = (findViewById<View>(R.id.telefonoTextView) as EditText).text.toString()
+        val rol = "admin"
 
-        db.collection("users").document(email ?: "").set{
-            hashMapOf("email" to email,
-                    "address" to direccion,
-                    "phone" to phone)
+        val userData = hashMapOf(
+            "email" to email,
+            "address" to direccion,
+            "phone" to phone,
+            "rol" to rol
+        )
+
+        // Accede a la colección "users" y utiliza el email como ID del documento
+        if (email != null) {
+            db.collection("users")
+                .document(email)
+                .set(userData)
+                .addOnSuccessListener {
+                    // Los datos se guardaron con éxito
+                }
+                .addOnFailureListener { e ->
+                    // Hubo un error al guardar los datos
+                    Log.e("MenuPrincipalActivity", "Error al guardar datos: $e")
+                }
         }
     }
 
@@ -55,4 +71,10 @@ class MenuPrincipalActivity : AppCompatActivity() {
         val intent = Intent(this, SignUpActivity::class.java)
         startActivity(intent)
     }
+
+    fun activityAdminAction(view: View?){
+        val intent = Intent(this, AdminActivity::class.java)
+        startActivity(intent)
+    }
+
 }
