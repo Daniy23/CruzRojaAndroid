@@ -1,14 +1,11 @@
-package mx.tec.a01736594;
+package mx.tec.a01736594
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-import android.os.Bundle;
-
-public class fotoperfil extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fotoperfil);
+class fotoperfil : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_fotoperfil)
     }
 }
