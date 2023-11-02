@@ -8,15 +8,17 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="134dp"
-        android:layout_height="56dp"
+        android:layout_width="132dp"
+        android:layout_height="84dp"
         android:text="@string/su_cuenta_ha_sido_creada_con_xito"
         android:textAlignment="center"
         android:textColor="#DD2C00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
         tools:ignore="TextSizeCheck" />
 
     <TextView

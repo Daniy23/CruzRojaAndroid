@@ -19,7 +19,7 @@
     <string name="tu_contrase_a">Tu Contraseña</string>
     <string name="tu_email">Tu Email</string>
     <string name="email3">email</string>
-    <string name="su_cuenta_ha_sido_creada_con_xito">Su Cuenta Ha Sido Creada Con Éxito</string>
+    <string name="su_cuenta_ha_sido_creada_con_xito">Su Cuenta Ha Sido Creada Con Éxito Espere a que el Admin lo Apruebe</string>
     <string name="iniciar_sesi_n4">Iniciar Sesión</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -35,4 +35,11 @@
     <string name="tel_fono">Teléfono</string>
     <string name="ver_usuarios">Ver Usuarios</string>
     <string name="usuarios_pendientes_de_aprobaci_n">Usuarios Pendientes de Aprobación</string>
+    <string name="aprobar">Aprobar</string>
+    <string name="nombre_del_usuario">Nombre del Usuario</string>
+    <string name="email_del_usuario">Email del Usuario</string>
+    <string name="tu_nombre">Tu nombre</string>
+    <string name="nombre5">Nombre</string>
+    <string name="tu_contrase_a6">Tu Contraseña</string>
+    <string name="repite_tu_password">Repite tu Password</string>
 </resources>
