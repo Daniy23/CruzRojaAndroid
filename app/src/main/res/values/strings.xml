@@ -1,31 +1,3 @@
 <resources>
-    <string name="app_name">Admin Cruz Roja</string>
-    <string name="administrador">ADMINISTRADOR</string>
-    <string name="cruz_roja_mexicana">Cruz Roja Mexicana</string>
-    <string name="iniciar_sesi_n">Iniciar Sesión</string>
-    <string name="crear_cuenta">Crear Cuenta</string>
-    <string name="iniciar_sesi_n2">Iniciar Sesión</string>
-    <string name="crear_cuenta2">Crear Cuenta</string>
-    <string name="ingresa_tus_datos_o_inicia_sesi_n">Ingresa tus datos o inicia sesión</string>
-    <string name="password">Password</string>
-    <string name="email">Email</string>
-    <string name="crea_tu_cuenta">Crea tu cuenta</string>
-    <string name="iniciar_sesi_n3">Iniciar Sesión</string>
-    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu contraseña?</string>
-    <string name="iniciar_sesi_n_admin">Iniciar Sesión Admin</string>
-    <string name="inicia_sesi_n_o_crea_tu_cuenta">Inicia Sesión o crea tu cuenta</string>
-    <string name="email2">Email</string>
-    <string name="password2">Password</string>
-    <string name="tu_contrase_a">Tu Contraseña</string>
-    <string name="tu_email">Tu Email</string>
-    <string name="email3">email</string>
-    <string name="su_cuenta_ha_sido_creada_con_xito">Su Cuenta Ha Sido Creada Con Éxito</string>
-    <string name="iniciar_sesi_n4">Iniciar Sesión</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tu_email4">Tu Email</string>
-    <string name="tu_contrase_a5">Tu Contraseña</string>
-    <string name="cerrar_sesi_n">Cerrar Sesión</string>
-    <string name="bienvenido_admin">Bienvenido Admin</string>
-    <string name="qu_quieres_hacer">¿Qué quieres hacer?</string>
+    <string name="app_name">administrador</string>
 </resources>
