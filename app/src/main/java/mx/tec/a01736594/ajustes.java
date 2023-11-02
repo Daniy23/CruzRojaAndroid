@@ -33,4 +33,8 @@ public class ajustes extends AppCompatActivity {
         Intent intent = new Intent(this, contrasena.class);
         startActivity(intent);
     }
+    public void aprobarusuario(View v){
+        Intent intent = new Intent(this, aprobarusuarios.class);
+        startActivity(intent);
+    }
 }
