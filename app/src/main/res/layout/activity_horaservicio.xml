@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="398dp"
+        android:layout_height="142dp"
+        android:background="#EE140A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Bienvenido a &quot;Aprobar horas de Servicio&quot;"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundView"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="@+id/backgroundView"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="324dp"
+        android:layout_height="61dp"
+        android:padding="0dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundView"
+        app:layout_constraintVertical_bias="0.157">
+
+        <!-- Fila de encabezado sin bordes -->
+        <TableRow android:background="@android:color/transparent">
+
+            <!-- Columna 1 - Nombre -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#EE140A"
+                android:gravity="center"
+                android:text="Nombre"
+                android:textColor="#FFFFFF" />
+            <!-- Columna 2 - ID -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#EE140A"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="#FFFFFF" />
+
+            <!-- Columna 3 - Horas -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#EE140A"
+                android:gravity="center"
+                android:text="Horas"
+                android:textColor="#FFFFFF" />
+
+            <!-- Columna 4 - No.Evento -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#EE140A"
+                android:gravity="center"
+                android:text="No.Evento"
+                android:textColor="#FFFFFF" />
+
+            <!-- Columna 5 - Acciones -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#EE140A"
+                android:gravity="center"
+                android:text="Acciones"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <!-- Filas de datos se agregarán dinámicamente desde la base de datos -->
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#FA0000"
+        android:text="Cerrar Sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
