@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import java.util.UUID
 import java.util.regex.Pattern
 
 @Suppress("SpellCheckingInspection")
@@ -54,14 +53,13 @@ class SignUpActivity : AppCompatActivity() {
                                 val user = FirebaseAuth.getInstance().currentUser
                                 val uid = user?.uid
                                 if (uid != null) {
-                                    val userDocId = UUID.randomUUID().toString()
                                     val userData = hashMapOf(
                                         "email" to email,
                                         "Nombre" to nombre,
                                         "rol" to rolRef,
                                         "estado" to estado
                                     )
-                                    db.collection("users").document(userDocId)
+                                    db.collection("users").document(uid)
                                         .set(userData)
                                         .addOnSuccessListener {
                                             showConfirmacion(email)

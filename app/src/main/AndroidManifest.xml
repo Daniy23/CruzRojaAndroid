@@ -46,7 +46,7 @@
             android:name=".restablecercontrasena"
             android:exported="false" />
         <activity
-            android:name=".recuperacioncontrasena"
+            android:name=".RecuperacionContrasenaActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
