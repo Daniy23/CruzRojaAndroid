@@ -42,38 +42,44 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun verifyUserRoleAndState(user: FirebaseUser){
-        val userRef = db.collection("users").document(user.uid)
 
+    /**
+     * Verify if the user is an admin and is approved
+     */
+    private fun verifyUserRoleAndState(user: FirebaseUser) {
+        // Get user data from Firestore
+        val userRef = db.collection("users").document(user.uid)
         userRef.get().addOnSuccessListener { document ->
-            if(document.exists()) {
+            // User exists
+            if (document.exists()) {
                 val userData = document.data
+                val userName = userData?.get("Nombre") as String
                 val userState = userData?.get("estado") as String
                 val rolRef = userData["rol"] as DocumentReference
-
                 rolRef.get().addOnSuccessListener { rolDocument ->
-                    if(rolDocument.exists()) {
+                    // If the user rol is valid, get the data
+                    if (rolDocument.exists()) {
                         val rolData = rolDocument.data
-
                         val userRole = rolData?.get("id") as String
-
-
-                        if ((userRole == "admin")) {
-                            if (userState == "aprobado") {
-                                showView(user.email ?: "")
-                            } else {
-                                showAlert("Aún no has sido aprobado")
-                            }
+                        // User is admin and is approved
+                        if (userRole == "admin" && userState == "aprobado") {
+                            showView(user.uid, user.email ?: "", userName)
+                        // User is admin but is not approved
+                        } else if (userRole == "admin") {
+                            showAlert("Aún no has sido aprobado")
+                        // User is not admin
                         } else {
                             showAlert("No eres un administrador")
                         }
-                     }
+                    }
                 }
+            // User doesn't exist
             } else {
                 showAlert("Credenciales inválidas")
             }
         }
     }
+
 
     private fun showAlert(errorMessage: String) {
         val builder = AlertDialog.Builder(this)
@@ -84,14 +90,20 @@ class LoginActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showView(email: String){
-        val viewIntent = Intent(this, MenuPrincipalActivity::class.java).apply{
+    /**
+     * Call MenuPrincipalActivity activity
+     */
+    private fun showView(id: String, email: String, name: String){
+        // Keep track of the user data in the app
+        val intent = Intent(this, MenuPrincipalActivity::class.java).apply {
+            putExtra("id", id)
             putExtra("email", email)
+            putExtra("name", name)
         }
-
-        startActivity(viewIntent)
+        startActivity(intent)
     }
 
+    
     fun showViewRecuperar(view: View?){
         val viewIntent = Intent(this, RecuperacionContrasenaActivity::class.java)
 

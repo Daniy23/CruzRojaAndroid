@@ -5,14 +5,16 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
+
 
 class MenuPrincipalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menuprincipal)
-
-
+        val intent = intent
+        if (intent == null) {
+            finish()
+        }
     }
 
     fun dashboard(v: View?) {
@@ -25,9 +27,22 @@ class MenuPrincipalActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    /**
+     * Open the activity of ads display
+     * 
+     * @param v The view that called the method
+     */
     fun anuncio(v: View?) {
-        val intent = Intent(this, anuncios::class.java)
-        startActivity(intent)
+        // Keep track of the user data in the app
+        val intent = intent
+        val newIntent = Intent(this, anuncios::class.java).apply {
+            putExtra("userId", intent.getStringExtra("id"))
+            putExtra("userEmail", intent.getStringExtra("email"))
+            putExtra("userName", intent.getStringExtra("name"))
+        }
+
+        // Redirect to the ads list activity
+        startActivity(newIntent)
     }
 
     fun horasservicio(v: View?) {

@@ -49,4 +49,14 @@
     <string name="horas_de_servicio_social">Horas de servicio social</string>
     <string name="bienvenido_admin5">Bienvenido Admin</string>
     <string name="qu_quieres_hacer5">¿Qué quieres hacer?</string>
+    <string name="horas_acreditadas">Horas acreditadas:</string>
+    <string name="fecha_del_evento">Fecha del evento:</string>
+    <string name="imagen_del_anuncio">Imagen del anuncio</string>
+    <string name="nuevo_anuncio">Nuevo anuncio</string>
+    <string name="seleccionar_fecha">Seleccionar fecha *</string>
+    <string name="agregar_imagen">Agregar imagen</string>
+    <string name="crear_anuncio">Crear anuncio</string>
+    <string name="es_un_evento">Es un evento</string>
+    <string name="descripcion">Descripción</string>
+    <string name="titulo">Título *</string>
 </resources>
