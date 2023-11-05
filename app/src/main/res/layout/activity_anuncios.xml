@@ -10,9 +10,11 @@
     <TextView
         android:id="@+id/textView12"
         android:layout_width="360dp"
-        android:layout_height="146dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="sans-serif"
-        android:text="Creador de anuncios"
+        android:text="Anuncios"
         android:textColor="#EE140A"
         android:textColorHighlight="#EE140A"
         android:textColorLink="#EE140A"
@@ -30,6 +32,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/returngray"
+        android:contentDescription="@string/nuevo_anuncio"
         android:foreground="@drawable/returngray"
         android:onClick="go"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,5 +41,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnCreateAd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createAd"
+        android:text="@string/nuevo_anuncio"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvAdList"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAdList"
+        android:layout_width="361dp"
+        android:layout_height="371dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
