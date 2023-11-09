@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="300dp"
-        android:layout_height="124dp"
+        android:layout_width="360dp"
+        android:layout_height="146dp"
         android:fontFamily="sans-serif"
-        android:text="Bienvenido a los anuncios"
+        android:text="Creador de anuncios"
         android:textColor="#EE140A"
         android:textColorHighlight="#EE140A"
         android:textColorLink="#EE140A"
@@ -38,4 +38,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
