@@ -25,7 +25,7 @@
         android:layout_width="300dp"
         android:layout_height="124dp"
         android:fontFamily="sans-serif"
-        android:text="Bienvenido a aprobar usuarios"
+        android:text="Aprobar usuarios"
         android:textColor="#EE140A"
         android:textColorHighlight="#EE140A"
         android:textColorLink="#EE140A"
