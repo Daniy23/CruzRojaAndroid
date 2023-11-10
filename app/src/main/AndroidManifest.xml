@@ -49,7 +49,7 @@
             android:name=".restablecercontrasena"
             android:exported="false" />
         <activity
-            android:name=".recuperacioncontrasena"
+            android:name=".RecuperacionContrasenaActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
@@ -59,6 +59,12 @@
             android:exported="false" />
         <activity
             android:name=".ConfirmacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserAdapter"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
