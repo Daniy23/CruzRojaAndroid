@@ -14,7 +14,7 @@ public class aprobarusuarios extends AppCompatActivity {
         setContentView(R.layout.activity_aprobarusuarios);
     }
     public void go(View v){
-        Intent intent = new Intent(this, menuprincipal.class);
+        Intent intent = new Intent(this, MenuPrincipalActivity.class);
         startActivity(intent);
     }
 }

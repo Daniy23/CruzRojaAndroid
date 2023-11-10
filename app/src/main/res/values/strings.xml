@@ -42,4 +42,11 @@
     <string name="nombre5">Nombre</string>
     <string name="tu_contrase_a6">Tu Contraseña</string>
     <string name="repite_tu_password">Repite tu Password</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="anuncios">Anuncios</string>
+    <string name="cerrar_sesi_n6">Cerrar Sesión</string>
+    <string name="dashboard">dashboard</string>
+    <string name="horas_de_servicio_social">Horas de servicio social</string>
+    <string name="bienvenido_admin5">Bienvenido Admin</string>
+    <string name="qu_quieres_hacer5">¿Qué quieres hacer?</string>
 </resources>

@@ -2,15 +2,12 @@ package mx.tec.a01736594
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 class MenuPrincipalActivity : AppCompatActivity() {
-    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menuprincipal)
@@ -18,17 +15,39 @@ class MenuPrincipalActivity : AppCompatActivity() {
 
     }
 
+    fun dashboard(v: View?) {
+        val intent = Intent(this, dashboard::class.java)
+        startActivity(intent)
+    }
+
+    fun ajustes(v: View?) {
+        val intent = Intent(this, ajustes::class.java)
+        startActivity(intent)
+    }
+
+    fun anuncio(v: View?) {
+        val intent = Intent(this, anuncios::class.java)
+        startActivity(intent)
+    }
+
+    fun horasservicio(v: View?) {
+        val intent = Intent(this, horasservicio::class.java)
+        startActivity(intent)
+    }
+
+    fun login(v: View?) {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+
+    /*
     fun guardarAction(view: View?){
         val bundle = intent.extras
         val email = bundle?.getString("email")
-        val direccion = (findViewById<View>(R.id.direccionTextView) as EditText).text.toString()
-        val phone = (findViewById<View>(R.id.telefonoTextView) as EditText).text.toString()
         val rol = "admin"
 
         val userData = hashMapOf(
             "email" to email,
-            "address" to direccion,
-            "phone" to phone,
             "rol" to rol
         )
 
@@ -60,12 +79,14 @@ class MenuPrincipalActivity : AppCompatActivity() {
 
     }
 
+
     fun eliminarAction(view: View?){
         val bundle = intent.extras
         val email = bundle?.getString("email")
         db.collection("users").document(email ?: "").delete()
     }
 
+*/
     fun logOutAction(view: View?){
         FirebaseAuth.getInstance().signOut()
         val intent = Intent(this, SignUpActivity::class.java)

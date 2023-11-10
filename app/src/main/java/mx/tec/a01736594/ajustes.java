@@ -14,7 +14,7 @@ public class ajustes extends AppCompatActivity {
         setContentView(R.layout.activity_ajustes);
     }
     public void go(View v){
-        Intent intent = new Intent(this, menuprincipal.class);
+        Intent intent = new Intent(this, MenuPrincipalActivity.class);
         startActivity(intent);
     }
     public void nombreusuario(View v){
@@ -34,7 +34,7 @@ public class ajustes extends AppCompatActivity {
         startActivity(intent);
     }
     public void aprobarusuario(View v){
-        Intent intent = new Intent(this, aprobarusuarios.class);
+        Intent intent = new Intent(this, AdminActivity.class);
         startActivity(intent);
     }
 }

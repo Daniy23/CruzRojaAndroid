@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".menuprincipal">
+    tools:context=".MenuPrincipalActivity">
 
 
     <Button
@@ -14,13 +13,14 @@
         android:layout_height="150dp"
         android:foreground="@drawable/serviciosocialmp"
         android:onClick="horasservicio"
-        android:text="Horas de servicio social"
+        android:text="@string/horas_de_servicio_social"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.635" />
+        app:layout_constraintVertical_bias="0.635"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/ajustes"
@@ -28,22 +28,25 @@
         android:layout_height="150dp"
         android:foreground="@drawable/ajustes"
         android:onClick="ajustes"
-        android:text="Ajustes"
+        android:text="@string/ajustes"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.635" />
+        app:layout_constraintVertical_bias="0.635"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="280dp"
         android:layout_height="124dp"
         android:fontFamily="sans-serif"
-        android:text="@string/bienvenido_admin"
+        android:text="@string/bienvenido_admin5"
         android:textColor="#EE140A"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintVertical_bias="0.051"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -60,7 +63,7 @@
         android:layout_height="47dp"
         android:background="#EE140A"
         android:backgroundTint="#00F6F2F2"
-        android:text="@string/qu_quieres_hacer"
+        android:text="@string/qu_quieres_hacer5"
         android:textAlignment="center"
         android:textColor="#B5EE140A"
         android:textSize="24sp"
@@ -74,122 +77,53 @@
         tools:ignore="TextContrastCheck,TextSizeCheck" />
 
     <Button
-        android:id="@+id/cerrarSesion"
-        android:layout_width="171dp"
-        android:layout_height="48dp"
-        android:background="@drawable/rounded_button_background"
+        android:id="@+id/dashboard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/botonmenu"
         android:backgroundTint="#EE140A"
-        android:onClick="logOutAction"
-        android:text="@string/cerrar_sesi_n"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
+        android:foreground="@drawable/dashboardmp"
+        android:onClick="dashboard"
+        android:text="@string/dashboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/goToBtn"
-        app:layout_constraintVertical_bias="0.416"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.115"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/recuperarBtn"
-        android:layout_width="171dp"
-        android:layout_height="48dp"
-        android:background="@drawable/rounded_button_background"
+        android:id="@+id/anuncio"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/botonmenu"
         android:backgroundTint="#EE140A"
-        android:onClick="recuperarAction"
-        android:text="@string/recuperar"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
+        android:foreground="@drawable/anunciomp"
+        android:onClick="anuncio"
+        android:text="@string/anuncios"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.542"
+        app:layout_constraintVertical_bias="0.115"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/guardarBtn"
-        android:layout_width="171dp"
-        android:layout_height="48dp"
-        android:background="@drawable/rounded_button_background"
+        android:id="@+id/cerrarsesion"
+        android:layout_width="231dp"
+        android:layout_height="49dp"
         android:backgroundTint="#EE140A"
-        android:onClick="guardarAction"
-        android:text="@string/guardar"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
+        android:onClick="login"
+        android:text="@string/cerrar_sesi_n6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.401"
+        app:layout_constraintTop_toBottomOf="@+id/serviciosocial"
+        app:layout_constraintVertical_bias="0.792"
         tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/eliminarBtn"
-        android:layout_width="171dp"
-        android:layout_height="48dp"
-        android:background="@drawable/rounded_button_background"
-        android:backgroundTint="#EE140A"
-        android:onClick="eliminarAction"
-        android:text="@string/eliminar"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.672"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/goToBtn"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
-        android:background="@drawable/rounded_button_background"
-        android:backgroundTint="#EE140A"
-        android:onClick="activityAdminAction"
-        android:text="@string/ver_usuarios"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eliminarBtn"
-        app:layout_constraintVertical_bias="0.1"
-        tools:ignore="TextContrastCheck,TextSizeCheck" />
-
-    <EditText
-        android:id="@+id/direccionTextView"
-        android:layout_width="247dp"
-        android:layout_height="61dp"
-        android:hint="@string/calle_n_mero_piso"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.055"
-        tools:ignore="MissingConstraints"
-        android:inputType="text"        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/telefonoTextView"
-        android:layout_width="241dp"
-        android:layout_height="57dp"
-        android:hint="@string/tel_fono"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/direccionTextView"
-        app:layout_constraintVertical_bias="0.043"
-        android:autofillHints="" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

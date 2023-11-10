@@ -18,16 +18,13 @@ class MainActivity : AppCompatActivity() {
         bundle.putString("message", "Integración de Firebase completa")
         analytics.logEvent("InitScreen", bundle)
     }
-    public void go(View v){
-        Intent intent = new Intent(this, menuprincipal.class);
-        startActivity(intent);
+
+    fun logingo(view: View){
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
-    public void logingo(View v){
-        Intent intent = new Intent(this, login.class);
-        startActivity(intent);
-    }
-    public void signupgo(View v){
-        Intent intent = new Intent(this, signup.class);
+    fun signupgo(view: View){
+        val intent = Intent(this, SignUpActivity::class.java);
         startActivity(intent);
     }
 }
