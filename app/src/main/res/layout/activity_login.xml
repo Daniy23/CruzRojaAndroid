@@ -58,7 +58,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.022"
         tools:ignore="LabelFor,SpeakableTextPresentCheck" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"

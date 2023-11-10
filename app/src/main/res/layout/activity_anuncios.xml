@@ -4,6 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".anuncios">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="360dp"
+        android:layout_height="146dp"
+        android:fontFamily="sans-serif"
+        android:text="Creador de anuncios"
+        android:textColor="#EE140A"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/returnmenu4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/returngray"
+        android:foreground="@drawable/returngray"
+        android:onClick="go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
