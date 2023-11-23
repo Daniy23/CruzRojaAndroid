@@ -59,7 +59,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
 
     fun login(v: View?) {
-        val intent = Intent(this, LoginActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
