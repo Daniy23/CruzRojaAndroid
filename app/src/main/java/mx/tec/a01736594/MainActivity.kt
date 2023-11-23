@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.google.firebase.analytics.FirebaseAnalytics
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putString("message", "Integración de Firebase completa")
         analytics.logEvent("InitScreen", bundle)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     }
 
     fun logingo(view: View){
@@ -26,5 +28,9 @@ class MainActivity : AppCompatActivity() {
     fun signupgo(view: View){
         val intent = Intent(this, SignUpActivity::class.java);
         startActivity(intent);
+    }
+    fun go(v: View?) {
+        val intent = Intent(this, MenuPrincipalActivity::class.java)
+        startActivity(intent)
     }
 }
