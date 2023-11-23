@@ -109,4 +109,8 @@ class LoginActivity : AppCompatActivity() {
 
         startActivity(viewIntent)
     }
+    fun go(v: View?) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }
