@@ -31,7 +31,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
 
     fun ajustes(v: View?) {
-        val intent = Intent(this, ajustes::class.java)
+        val intent = Intent(this, AdminActivity::class.java)
         startActivity(intent)
     }
 

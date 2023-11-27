@@ -34,7 +34,7 @@
     <string name="recuperar">recuperar</string>
     <string name="tel_fono">Teléfono</string>
     <string name="ver_usuarios">Ver Usuarios</string>
-    <string name="usuarios_pendientes_de_aprobaci_n">Usuarios Prro endientes de Aprobación</string>
+    <string name="usuarios_pendientes_de_aprobaci_n">Aprobar Nuevos Administradores</string>
     <string name="aprobar">Aprobar</string>
     <string name="nombre_del_usuario">Nombre del Usuario</string>
     <string name="email_del_usuario">Email del Usuario</string>
