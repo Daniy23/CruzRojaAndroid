@@ -40,6 +40,7 @@
         app:layout_constraintVertical_bias="0.115" />
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlServiceHour"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:background="#EE140A"
@@ -68,11 +69,22 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="N.Evento" />
+            android:text="Evento" />
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Acciones" />
+            android:text="Acción" />
     </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvServiceHourList"
+        android:layout_width="363dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlServiceHour"
+        app:layout_constraintVertical_bias="0.047" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
