@@ -107,5 +107,9 @@ class SignUpActivity : AppCompatActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
+    fun go(v: View?) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 
 }

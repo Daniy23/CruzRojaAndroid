@@ -8,11 +8,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/fondo"
         android:orientation="vertical"
         android:padding="16dp"
         tools:context=".AdminActivity"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-52dp">
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="130dp">
+        <Button
+            android:id="@+id/returnmenu1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/returngray"
+            android:foreground="@drawable/returngray"
+            android:onClick="go"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
 
         <TextView
             android:id="@+id/titleTextView"
@@ -20,8 +34,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/usuarios_pendientes_de_aprobaci_n"
-            android:textColor="#9C27B0"
-            android:textSize="24sp" />
+            android:textAlignment="center"
+            android:textColor="#EE140A"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/userRecyclerView"
