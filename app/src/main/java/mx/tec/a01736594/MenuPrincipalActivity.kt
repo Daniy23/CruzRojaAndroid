@@ -53,9 +53,22 @@ class MenuPrincipalActivity : AppCompatActivity() {
         startActivity(newIntent)
     }
 
+    /**
+     * Open the activity of service hour requests display 
+     *
+     * @param v The view that called the method
+     */
     fun horasservicio(v: View?) {
-        val intent = Intent(this, horasservicio::class.java)
-        startActivity(intent)
+        // Keep track of the user data in the app
+        val intent = intent
+        val newIntent = Intent(this, horasservicio::class.java).apply {
+            putExtra("userId", intent.getStringExtra("id"))
+            putExtra("userEmail", intent.getStringExtra("email"))
+            putExtra("userName", intent.getStringExtra("name"))
+        }
+
+        // Redirect to the service hour list activity
+        startActivity(newIntent)
     }
 
     fun login(v: View?) {
