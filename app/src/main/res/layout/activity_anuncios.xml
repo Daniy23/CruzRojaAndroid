@@ -44,8 +44,8 @@
 
     <Button
         android:id="@+id/btnCreateAd1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="141dp"
+        android:layout_height="79dp"
         android:foreground="@drawable/crearanuncio"
         android:onClick="createAd"
         android:text="@string/nuevo_anuncio"

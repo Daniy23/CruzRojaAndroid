@@ -3,6 +3,7 @@ package mx.tec.a01736594;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -84,5 +85,9 @@ public class horasservicio extends AppCompatActivity implements ServiceHourAdapt
 
     public void onServiceHourDelete(int position) {
         // Do nothing
+    }
+    public void go(View v){
+        Intent intent = new Intent(this, MenuPrincipalActivity.class);
+        startActivity(intent);
     }
 }

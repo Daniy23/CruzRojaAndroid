@@ -1,6 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#DAD7D7"
+    android:backgroundTint="#DAD7D7"
     android:orientation="horizontal"
     android:padding="10dp">
 
@@ -8,9 +10,10 @@
         android:id="@+id/tvDashboardUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="16sp"
+        android:layout_weight="1.17"
+        android:textAlignment="viewStart"
         android:textColor="@android:color/black"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
@@ -18,17 +21,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="16sp"
+        android:textAlignment="textStart"
         android:textColor="@android:color/black"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvDashboardUserCumulativeHours"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="16sp"
+        android:layout_weight="0.7"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
 </LinearLayout>

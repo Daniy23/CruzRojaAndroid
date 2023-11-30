@@ -7,13 +7,49 @@
     android:background="@drawable/fondo"
     tools:context=".AdDetailsActivity">
 
-    <ScrollView
-        android:layout_width="345dp"
-        android:layout_height="547dp"
+    <Button
+        android:id="@+id/returnmenu2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/returngray"
+        android:contentDescription="@string/nuevo_anuncio"
+        android:foreground="@drawable/returngray"
+        android:onClick="go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Detalles del Anuncio"
+        android:textColor="#EE140A"
+        android:textColorHighlight="#EE140A"
+        android:textColorLink="#EE140A"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="345dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,26 +86,6 @@
                 android:textStyle="italic" />
 
             <LinearLayout
-                android:id="@+id/linearLayoutCrudButtons"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-                
-                <Button
-                    android:id="@+id/btnDeleteAd"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@android:color/holo_red_light"
-                    android:onClick="prepareAdDeleting"
-                    android:text="Eliminar"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/background_light" />
-
-            </LinearLayout>
-
-            <LinearLayout
                 android:id="@+id/linearLayoutEventDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,9 +105,9 @@
                     android:id="@+id/tvAdEventDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="4dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -115,9 +131,9 @@
                     android:id="@+id/tvAdEventHours"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="4dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -137,5 +153,19 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/btnDeleteAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="prepareAdDeleting"
+        android:text="Eliminar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

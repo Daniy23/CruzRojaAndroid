@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -9,36 +10,43 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="10sp"
+        android:textAlignment="viewStart"
         android:textColor="@android:color/black"
+        android:textSize="10sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvServiceHourVolunteerId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="10sp"
+        android:layout_weight="1.27"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textStyle="bold" />
+        android:textSize="10sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp" />
 
     <TextView
         android:id="@+id/tvServiceHourEventHours"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="10sp"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textStyle="bold" />
+        android:textSize="10sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp" />
 
     <TextView
         android:id="@+id/tvServiceHourEventName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="10sp"
+        android:layout_weight="1.25"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textStyle="bold" />
+        android:textSize="10sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp" />
 
     <LinearLayout
         android:id="@+id/linearLayoutServiceHour"
@@ -52,9 +60,10 @@
             android:id="@+id/btnApproveListServiceHour"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="1.2"
             android:backgroundTint="@android:color/holo_green_light"
             android:text="S"
+            android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@android:color/background_light"
             android:textSize="10sp" />
@@ -63,12 +72,13 @@
             android:id="@+id/btnDeclineListServiceHour"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="1.2"
             android:backgroundTint="@android:color/holo_red_light"
             android:text="N"
-            android:textSize="10sp"
+            android:textAlignment="textStart"
             android:textAllCaps="false"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp" />
 
     </LinearLayout>
 

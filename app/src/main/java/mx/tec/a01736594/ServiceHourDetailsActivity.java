@@ -76,6 +76,10 @@ public class ServiceHourDetailsActivity extends AppCompatActivity {
         // Service hour evidence
         Glide.with(this).load(serviceHourEvidence).fitCenter().into(ivServiceHourEvidence);
     }
+    public void go(View v){
+        Intent intent = new Intent(this, horasservicio.class);
+        startActivity(intent);
+    }
 
     /**
      * Prepare the service hour approval process

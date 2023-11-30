@@ -114,6 +114,10 @@ public class AdDetailsActivity extends AppCompatActivity {
         // Ad image
         Glide.with(this).load(adImage).fitCenter().into(ivAdImage);
     }
+    public void go(View v){
+        Intent intent = new Intent(this, anuncios.class);
+        startActivity(intent);
+    }
 
     /**
      * Prepare the ad deleting process

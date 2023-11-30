@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="410dp"
-    android:layout_height="85dp"
+    android:layout_width="365dp"
+    android:layout_height="95dp"
     android:orientation="horizontal"
     android:padding="8dp">
 
         <TextView
             android:id="@+id/nameTextView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="37dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:text="@string/nombre_del_usuario"
-            android:textSize="18sp"
+            android:textSize="20sp"
             tools:ignore="Suspicious0dp" />
 
         <TextView
             android:id="@+id/mailTextView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="121dp"
+            android:layout_height="62dp"
             android:layout_weight="1"
             android:text="@string/email_del_usuario"
-            android:textSize="18sp"
+            android:textSize="20sp"
             tools:ignore="Suspicious0dp" />
 
         <Button
             android:id="@+id/aprroveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/aprobar" />
+            android:backgroundTint="#D90000"
+            android:text="@string/aprobar"
+            android:textColor="#F9F9F9" />
 
 </LinearLayout>
 

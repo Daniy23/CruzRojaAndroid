@@ -60,7 +60,10 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ID" />
+            android:text="ID"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="232dp" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
