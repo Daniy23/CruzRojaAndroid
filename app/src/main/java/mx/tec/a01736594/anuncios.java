@@ -184,9 +184,16 @@ public class anuncios extends AppCompatActivity implements AdAdapter.OnAdDeleteL
         });
     }
 
-    public void go(View v){
-        Intent intent = new Intent(this, MenuPrincipalActivity.class);
-        startActivity(intent);
+    public void go(View v) {
+        // Keep track of the user data in the app
+        Intent intent = getIntent();
+        Intent newIntent = new Intent(this, MenuPrincipalActivity.class);
+        newIntent.putExtra("userId", intent.getStringExtra("userId"));
+        newIntent.putExtra("userEmail", intent.getStringExtra("userEmail"));
+        newIntent.putExtra("userName", intent.getStringExtra("userName"));
+
+        // Redirect to the main menu activity
+        startActivity(newIntent);
     }
 
     /**

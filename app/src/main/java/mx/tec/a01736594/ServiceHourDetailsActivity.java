@@ -77,8 +77,15 @@ public class ServiceHourDetailsActivity extends AppCompatActivity {
         Glide.with(this).load(serviceHourEvidence).fitCenter().into(ivServiceHourEvidence);
     }
     public void go(View v){
-        Intent intent = new Intent(this, horasservicio.class);
-        startActivity(intent);
+        // Keep track of the user data in the app
+        Intent intent = getIntent();
+        Intent newIntent = new Intent(this, horasservicio.class);
+        newIntent.putExtra("userId", intent.getStringExtra("userId"));
+        newIntent.putExtra("userEmail", intent.getStringExtra("userEmail"));
+        newIntent.putExtra("userName", intent.getStringExtra("userName"));
+
+        // Redirect to the main menu activity
+        startActivity(newIntent);
     }
 
     /**

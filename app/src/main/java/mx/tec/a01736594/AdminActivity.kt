@@ -51,7 +51,15 @@ class AdminActivity : AppCompatActivity() {
         // userRecyclerView.adapter = userAdapter
     }
     fun go(v: View?) {
-        val intent = Intent(this, MenuPrincipalActivity::class.java)
-        startActivity(intent)
+        // Keep track of the user data in the app
+        val intent = intent
+        val newIntent = Intent(this, MenuPrincipalActivity::class.java).apply {
+            putExtra("userId", intent.getStringExtra("userId"))
+            putExtra("userEmail", intent.getStringExtra("userEmail"))
+            putExtra("userName", intent.getStringExtra("userName"))
+        }
+
+        // Redirect to the main menu activity
+        startActivity(newIntent)
     }
 }

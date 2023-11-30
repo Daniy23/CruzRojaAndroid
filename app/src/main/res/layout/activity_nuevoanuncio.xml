@@ -7,10 +7,71 @@
     android:background="@drawable/fondo"
     tools:context=".nuevoanuncio">
 
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/returngray"
+        android:foreground="@drawable/returngray"
+        android:onClick="go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear anuncio"
+        android:textColor="#EE140A"
+        android:textSize="37dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
+        android:id="@+id/txtAdDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/descripcion"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdTitle"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnCreateAd"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EE140A"
+        android:onClick="newAd"
+        android:text="@string/crear_anuncio"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdImage"
+        app:layout_constraintVertical_bias="0.769" />
+
     <EditText
         android:id="@+id/txtAdTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="@string/titulo"
         android:inputType="text"
         android:minHeight="48dp"
@@ -19,25 +80,22 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137"
-        android:autofillHints=""
+        app:layout_constraintVertical_bias="0.18"
         tools:ignore="VisualLintTextFieldSize" />
 
-    <EditText
-        android:id="@+id/txtAdDescription"
+    <Button
+        android:id="@+id/btnAdImage"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/descripcion"
-        android:inputType="text"
-        android:minHeight="48dp"
+        android:layout_marginBottom="272dp"
+        android:text="@string/agregar_imagen"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAdTitle"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints=""
-        tools:ignore="VisualLintTextFieldSize" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOptional"
+        app:layout_constraintVertical_bias="0.205"
+        tools:ignore="VisualLintButtonSize" />
 
     <CheckBox
         android:id="@+id/cbAdIsEvent"
@@ -84,34 +142,5 @@
             android:autofillHints="" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnAdImage"
-        style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
-        android:text="@string/agregar_imagen"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOptional"
-        app:layout_constraintVertical_bias="0.158"
-        tools:ignore="VisualLintButtonSize" />
-
-    <Button
-        android:id="@+id/btnCreateAd"
-        android:layout_width="211dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#EE140A"
-        android:onClick="newAd"
-        android:text="@string/crear_anuncio"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdImage"
-        app:layout_constraintVertical_bias="0.704" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

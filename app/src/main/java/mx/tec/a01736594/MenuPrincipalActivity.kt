@@ -21,9 +21,9 @@ class MenuPrincipalActivity : AppCompatActivity() {
         // Keep track of the user data in the app
         val intent = intent
         val newIntent = Intent(this, dashboard::class.java).apply {
-            putExtra("userId", intent.getStringExtra("id"))
-            putExtra("userEmail", intent.getStringExtra("email"))
-            putExtra("userName", intent.getStringExtra("name"))
+            putExtra("userId", intent.getStringExtra("userId"))
+            putExtra("userEmail", intent.getStringExtra("userEmail"))
+            putExtra("userName", intent.getStringExtra("userName"))
         }
 
         // Redirect to the ads list activity
@@ -31,8 +31,16 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
 
     fun ajustes(v: View?) {
-        val intent = Intent(this, AdminActivity::class.java)
-        startActivity(intent)
+        // Keep track of the user data in the app
+        val intent = intent
+        val newIntent = Intent(this, AdminActivity::class.java).apply {
+            putExtra("userId", intent.getStringExtra("userId"))
+            putExtra("userEmail", intent.getStringExtra("userEmail"))
+            putExtra("userName", intent.getStringExtra("userName"))
+        }
+
+        // Redirect to the admin users list activity
+        startActivity(newIntent)
     }
 
     /**
@@ -44,9 +52,9 @@ class MenuPrincipalActivity : AppCompatActivity() {
         // Keep track of the user data in the app
         val intent = intent
         val newIntent = Intent(this, anuncios::class.java).apply {
-            putExtra("userId", intent.getStringExtra("id"))
-            putExtra("userEmail", intent.getStringExtra("email"))
-            putExtra("userName", intent.getStringExtra("name"))
+            putExtra("userId", intent.getStringExtra("userId"))
+            putExtra("userEmail", intent.getStringExtra("userEmail"))
+            putExtra("userName", intent.getStringExtra("userName"))
         }
 
         // Redirect to the ads list activity
@@ -62,9 +70,9 @@ class MenuPrincipalActivity : AppCompatActivity() {
         // Keep track of the user data in the app
         val intent = intent
         val newIntent = Intent(this, horasservicio::class.java).apply {
-            putExtra("userId", intent.getStringExtra("id"))
-            putExtra("userEmail", intent.getStringExtra("email"))
-            putExtra("userName", intent.getStringExtra("name"))
+            putExtra("userId", intent.getStringExtra("userId"))
+            putExtra("userEmail", intent.getStringExtra("userEmail"))
+            putExtra("userName", intent.getStringExtra("userName"))
         }
 
         // Redirect to the service hour list activity

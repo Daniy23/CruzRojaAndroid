@@ -96,9 +96,9 @@ class LoginActivity : AppCompatActivity() {
     private fun showView(id: String, email: String, name: String){
         // Keep track of the user data in the app
         val intent = Intent(this, MenuPrincipalActivity::class.java).apply {
-            putExtra("id", id)
-            putExtra("email", email)
-            putExtra("name", name)
+            putExtra("userId", id)
+            putExtra("userEmail", email)
+            putExtra("userName", name)
         }
         startActivity(intent)
     }

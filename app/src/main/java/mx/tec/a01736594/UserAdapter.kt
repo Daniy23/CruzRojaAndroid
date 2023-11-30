@@ -1,10 +1,13 @@
 package mx.tec.a01736594
 
+import android.app.Activity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -34,14 +37,30 @@ class UserAdapter(private val userList: List<User>) : RecyclerView.Adapter<UserA
             mailTextView.text = user.email
 
             approveButton.setOnClickListener {
-                val userDocumentref = db.collection("users").document(user.userId
-                    )
+                val userDocumentref = db.collection("users").document(user.userId)
 
                 userDocumentref.update("estado", "aprobado")
                     .addOnSuccessListener {
 
+                        val originalIntent = (itemView.context as Activity).intent
+                        val userId = originalIntent.getStringExtra("userId")
+                        val userEmail = originalIntent.getStringExtra("userEmail")
+                        val userName = originalIntent.getStringExtra("userName")
+
+                        Toast.makeText(itemView.context, "Usuario aprobado exitosamente", Toast.LENGTH_SHORT).show()
+
+                        // Keep track of the user data in the app
+                        val newIntent = Intent(itemView.context, AdminActivity::class.java).apply {
+                            putExtra("userId", userId)
+                            putExtra("userEmail", userEmail)
+                            putExtra("userName", userName)
+                        }
+
+                        // Redirect to the main menu activity
+                        itemView.context.startActivity(newIntent)
                     }
             }
         }
     }
+
 }

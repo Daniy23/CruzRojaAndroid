@@ -21,6 +21,8 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class dashboard extends AppCompatActivity implements DashboardUserAdapter.OnDashboardUserDeleteListener {
@@ -62,6 +64,13 @@ public class dashboard extends AppCompatActivity implements DashboardUserAdapter
                     DashboardUser dashboardUser = document.toObject(DashboardUser.class);
                     dashboardUserList.add(dashboardUser);
                 }
+                Collections.sort(dashboardUserList, new Comparator<DashboardUser>() {
+                    @Override
+                    public int compare(DashboardUser user1, DashboardUser user2) {
+                        return Integer.compare(user2.getCumulativeHours(), user1.getCumulativeHours());
+                    }
+                });
+
                 // Create an adapter to display the volunteer users in the RecyclerView
                 dashboardUserAdapter = new DashboardUserAdapter(dashboardUserList, dashboard.this);
                 recyclerView.setAdapter(dashboardUserAdapter);
@@ -84,7 +93,14 @@ public class dashboard extends AppCompatActivity implements DashboardUserAdapter
 
         
     public void go(View v){
-        Intent intent = new Intent(this, MenuPrincipalActivity.class);
-        startActivity(intent);
+        // Keep track of the user data in the app
+        Intent intent = getIntent();
+        Intent newIntent = new Intent(this, MenuPrincipalActivity.class);
+        newIntent.putExtra("userId", intent.getStringExtra("userId"));
+        newIntent.putExtra("userEmail", intent.getStringExtra("userEmail"));
+        newIntent.putExtra("userName", intent.getStringExtra("userName"));
+
+        // Redirect to the main menu activity
+        startActivity(newIntent);
     }
 }
