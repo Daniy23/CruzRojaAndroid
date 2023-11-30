@@ -7,70 +7,36 @@
     android:background="@drawable/fondo"
     tools:context=".nuevoanuncio">
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="Titulo del Anuncio"
-        android:textColor="#EE140A"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.075" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="332dp"
-        android:layout_height="94dp"
-        android:fontFamily="sans-serif"
-        android:text="Crear Nuevo Anuncio"
-        android:textColor="#EE140A"
-        android:textColorHighlight="#EE140A"
-        android:textColorLink="#EE140A"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
-
-    <Button
-        android:id="@+id/back2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/returngray"
-        android:foreground="@drawable/returngray"
-        android:onClick="regresarajustes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
-
     <EditText
         android:id="@+id/txtAdTitle"
-        android:layout_width="373dp"
-        android:layout_height="49dp"
-        android:autofillHints=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/titulo"
         android:inputType="text"
         android:minHeight="48dp"
-        android:textColor="#00000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357"
+        app:layout_constraintVertical_bias="0.137"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/txtAdDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/descripcion"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdTitle"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints=""
         tools:ignore="VisualLintTextFieldSize" />
 
     <CheckBox
@@ -86,39 +52,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAdDescription"
-        app:layout_constraintVertical_bias="0.137" />
-
-    <Button
-        android:id="@+id/btnAdImage"
-        style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="408dp"
-        android:layout_marginBottom="272dp"
-        android:text="@string/agregar_imagen"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOptional"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="VisualLintButtonSize" />
-
-    <EditText
-        android:id="@+id/txtAdDescription"
-        android:layout_width="369dp"
-        android:layout_height="42dp"
-        android:autofillHints=""
-        android:hint="@string/descripcion"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:singleLine="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAdTitle"
-        app:layout_constraintVertical_bias="0.07"
-        tools:ignore="VisualLintTextFieldSize" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <LinearLayout
         android:id="@+id/linearLayoutOptional"
@@ -152,20 +86,32 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnAdImage"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="272dp"
+        android:text="@string/agregar_imagen"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOptional"
+        app:layout_constraintVertical_bias="0.158"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
         android:id="@+id/btnCreateAd"
         android:layout_width="211dp"
-        android:layout_height="67dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="#EE140A"
         android:onClick="newAd"
         android:text="@string/crear_anuncio"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAdImage"
-        app:layout_constraintVertical_bias="0.837" />
+        app:layout_constraintVertical_bias="0.704" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

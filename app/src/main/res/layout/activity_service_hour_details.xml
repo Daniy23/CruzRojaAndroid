@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="62dp"
         android:fontFamily="sans-serif"
-        android:text="Detalles de la aprobación"
+        android:text="Detalles de la solicitud"
         android:textColor="#EE140A"
         android:textColorHighlight="#EE140A"
         android:textColorLink="#EE140A"

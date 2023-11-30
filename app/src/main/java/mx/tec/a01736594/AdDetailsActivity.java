@@ -94,7 +94,7 @@ public class AdDetailsActivity extends AppCompatActivity {
             tvAdEventHours.setText(adEventHours);
         // Otherwise, hide the event details
         } else {
-            adAuthorBottomMargin = 10;
+            adAuthorBottomMargin = 30;
             tvAdIsEvent.setVisibility(View.GONE);
             linearLayoutEventDate.setVisibility(View.GONE);
             linearLayoutEventHours.setVisibility(View.GONE);
